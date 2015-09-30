@@ -1,412 +1,353 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+		<meta name="theme-color" content="#2196F3">
+		<title>UNLV IEEE Student Branch</title>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<title></title>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	
-	<link rel="stylesheet" href="css/styles.css" type="text/css" />
-	<!--[if IE 7]>
-	<link type="text/css" rel="stylesheet" href="css/ie7.css" media="screen,tv" />
-	<![endif]-->
-	<!--[if lte IE 6]>
-	<link type="text/css" rel="stylesheet" href="css/ie6.css" media="screen,tv" />
-	<![endif]-->
+		<!-- CSS  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+		<link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="min/custom-min.css" type="text/css" rel="stylesheet" >
+	</head>
+	<body id="top" class="scrollspy">
 
-	<script type="text/javascript" src="scripts/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/jquery.cycle.all.min.js"></script>
+		<!-- Pre Loader -->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
 
-	<script type="text/javascript">
-		$.noConflict();
-		jQuery(document).ready(function() {			
-			jQuery('#slideshow').cycle({ 
-				fx: 'turnDown', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-				timeout: 6000,
-				prev: '#prev',
-				next: '#next',
-				cleartypeNoBg: true,
-				pause:   1 // pauses slideshow on hover 
-			});
-			
-			jQuery('#slideshow2').cycle({ 
-				fx: 'turnDown', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-				timeout: 6000,
-				prev: '#prev2',
-				next: '#next2',
-				cleartypeNoBg: true,
-				pause:   1 // pauses slideshow on hover 
-			});
-			
-			jQuery('#slideshow3').cycle({ 
-				fx: 'scrollRight', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-				timeout: 6000,
-				prev: '#prev3',
-				next: '#next3',
-				cleartypeNoBg: true,
-				pause:   1 // pauses slideshow on hover 
-			});
-		});
-	</script>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
 
-</head>
-
-<body>
-
-<!-- Global IEEE Header -->
-<div id="global-hd-container">
-	<div id="global-hd">
-		<ul>
-		<li><a href="http://www.ieee.org/">IEEE.org</a></li>
-		<li><a href="http://ieeexplore.ieee.org/">IEEE <em>Xplore</em> Digital Library</a></li>
-		<li><a href="http://standards.ieee.org/">IEEE Standards</a></li>
-		<li><a href="http://spectrum.ieee.org/">IEEE Spectrum</a></li>
-		<li><a href="http://www.ieee.org/membership_services/membership/students/index.html">IEEE Students</a></li>
-		<li><a href="http://www.ieee.org/membership_services/membership/my_ieee.html">myIEEE</a></li>
-		<li><a href="https://www.ieee.org/societies_communities/SocietiesandCommunitiesLandingPage_20101209134921">IEEE Societies and Communities</a></li>
-		<li class="last"><a href="http://www.ieee.org/sitemap">More Sites</a></li>
-		</ul>
-		<!-- IEEE SSO/OAM Sign in link -->
-		<!--div id="sign-in">
-			<img src="images/icon_key.gif" width="21" height="9" alt="Sign In" title="Sign In" />
-			<a href="#">Sign In</a>
-		</div-->
-	</div>
-</div>
-
-<!-- Page Container -->
-<div id="wedge"></div>
-<div id="header">
-	<!-- Site Logo -->
-	<div id="logos">
-		<!-- Society Logo -->
-		<div id="main">
-			<h1>IEEE UNLV Student Branch</h1>
-			<h2>University of Nevada, Las Vegas</h2>
-		</div>
-		
-		<!-- School Logo --->
-		<!-- IEEE Logo -->
-		<div id="ieee"><a href="http://www.ieee.org/" target="_blank"><img src="images/transparent.gif" width="125" height="37" alt="IEEE" title="IEEE" /></a></div>
-
-		<div id="university">
-			<a href="#" target="_blank"><img src="images/HowardHughes_Engineering.jpg" id="img_school" name="img_school" width="130" height="80" alt="" /></a>
 		</div>
 
-		<!-- Sign in link -->
-		<div id="links">
-			<ul>
-				<li><a href="http://ece.unlv.edu/">UNLV ECE Home</a></li>
-				<li><a href="https://faculty.unlv.edu/eelabs/">UNLV ECE Labs</a></li>
-				<li><a href = "http://catalog.unlv.edu/">UNLV Catalog </a></li>
-			<li class="last"><a href="http://www.unlv.edu">UNLV University Home</a></li>
-			</ul>
-		</div>
-	</div>
+		<!--Navigation-->
+		<div class="navbar-wrapper">
+			<nav id="nav_f" class="default_color" role="navigation">
+				<div class="container">
+					<div class="nav-wrapper">
+						<a href="#" id="logo-container" class="brand-logo">UNLV IEEE</a>
+						<ul class="right hide-on-med-and-down">
+							<li>
+								<a href="#intro">About</a>
+							</li>
+							<li>
+								<a href="#work">Events</a>
+							</li>
+							<li>
+								<a href="#team">Officers</a>
+							</li>
+							<li>
+								<a href="#contact">Contact and Links</a>
+							</li>
+							<li>
+								<a href="#status">Website Status</a>
+							</li>
 
-	<!-- Site Navigation -->
-	<div id="navbar">
-		<div id="navigation">
-			<ul>
-			<li><a href="#" class="item1">About Branch</a></li>
-			<li><a href="#" class="item2">Events &amp; Activities</a></li>
-			<li><a href="sub1.html" class="item3">Communities</a></li>
-			<li><a href="#" class="item4">Member Resources</a></li>
-			<li class="last"><a href="#" class="last item5">Extra Link</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<!-- Search Bar -->
-	<div id="search">
-		<form action="#">
-		<div id="search-content">Search Student Branch</div>
-		<div class="left"><input type="text" name="search" size="25" id="searchbox" /></div><div class="srch-btn-right"></div>
-		<div class="left"><div class="srch-btn-left"><a href="#">Search</a></div><div class="btn-right"></div></div>
-		</form>
-		
-		<!-- Social Media Icons -->		
-		<div id="socialmedia">
-			Follow:
-			<a href="#"><img src="images/icon_facebook.gif" width="23" height="23" alt="Facebook" title="Facebook" class="socialicon" /></a><a 
-			href="#"><img src="images/icon_twitter.gif" width="23" height="23" alt="Twitter" title="Twitter" class="socialicon" /></a><a 
-			href="#"><img src="images/icon_linkedin.gif" width="23" height="23" alt="LinkedIn" title="LinkedIn" class="socialicon" /></a><a 
-			href="#"><img src="images/icon_youtube.gif" width="23" height="23" alt="YouTube" title="YouTube" class="socialicon" /></a> | Share: <a
-			href="#"><img src="images/icon_share.gif" width="23" height="23" alt="ShareThis" title="ShareThis" class="socialicon" /></a>
-		</div>		
-	</div>
-
-</div>
-	
-<div class="clear"></div>
-
-<div id="container">
-	<!-- Home Page Content -->
-	<div id="hp-container">	
-
-		<div id="hp-container1">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content1" class="container">
-				<img src="images/hp/imgMain.jpg" width="227" height="177" class="image" />
-				<h3>Void</h3>
-				<p>Void</p>
-				<p><a href="#" class="arrow">Read more about our branch</a></p>
-			</div>
-		</div>
-
-		<div id="hp-container2">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content2" class="container">
-				<h2>After Graduation</h2>
-				<p>Void</p>
-			</div>
-		</div>
-
-		<div id="hp-container3">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content3" class="container">
-				<h2 class="left">Branch Events</h2>
-				<div class="right">
-					<img id="prev" src="images/icon_up.gif" width="14" height="14" alt="Up" title="Up" />
-					<img id="next" src="images/icon_down.gif" width="14" height="14" alt="Down" title="Down" /></a>
+						</ul>
+						<ul id="nav-mobile" class="side-nav">
+							<li>
+								<a href="#intro">About</a>
+							</li>
+							<li>
+								<a href="#work">Events</a>
+							</li>
+							<li>
+								<a href="#team">Officers</a>
+							</li>
+							<li>
+								<a href="#contact">Contact and Links</a>
+							</li>
+							<li>
+								<a href="#status">Website Status</a>
+							</li>
+						</ul>
+						<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+					</div>
 				</div>
-				<div class="clear"></div>
-				<div id="slideshow">
-				
-					<div>
+			</nav>
+		</div>
+
+		<!--Hero-->
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<h1 class="text_h center header cd-headline letters type"><span>I love</span><span class="cd-words-wrapper waiting"> <b class="is-visible">engineering</b> <b>electronics</b> <b>developing</b> </span></h1>
+			</div>
+		</div>
+
+		<!--Intro and service-->
+		<div id="intro" class="section scrollspy">
+			<div class="container">
+				<div class="row">
+					<div  class="col s12">
+						<h2 class="center header text_h2"> We are the UNLV student branch of the Institute of Electrical and Electronics Engineeers and our members are typically students majoring in Electrical Engineering, Computer Engineering, or Computer Science. </h2>
+					</div>
+
+					<div  class="col s12 m4 l4">
+						<div class="center promo promo-example">
+							<img src="img/unlvieeeicon.png" height="120" width="125">
+							<h5 class="promo-caption">UNLV IEEE Student Branch</h5>
+
+						</div>
+					</div>
+					<div class="col s12 m4 l4">
+						<div class="center promo promo-example">
+							<img src="img/HowardHughes_Engineering.jpg" height="120" width="190">
+							<h5 class="promo-caption">UNLV</h5>
+
+						</div>
+					</div>
+					<div class="col s12 m4 l4">
+						<div class="center promo promo-example">
+							<img src="img/ieeelogo.jpg" height="120" width="160">
+							<h5 class="promo-caption">IEEE</h5>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Work-->
+		<div class="section scrollspy" id="work">
+			<div class="container">
+				<h2 class="header text_b">Events Calendar </h2>
+				<p>
+					We have multiple activities throughout the year such as technical workshops, resume workshops, technical seminars, guest speakers, and conferences. The IEEE has many competitions (regional, national, international) that student members can compete in, but the main competitions our branch has focused on are the IEEEXtreme 24-hour programming competition held every fall, and the Student Paper Competition and Micromouse competition held every spring.
+				</p>
+				<iframe src="https://www.google.com/calendar/embed?height=720&amp;wkst=2&amp;bgcolor=%2333ccff&amp;src=unlv.nevada.edu_7tpjt41t99d4lq4ltat0d06jsc%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="1280" height="720" frameborder="0" scrolling="no"></iframe>
+
+				<div class="row">
+					<div class="col s12 m6 l6">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/solderingicon.jpg" height="275">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Soldering Workshop <i class="mdi-navigation-more-vert right"></i></span>
+								<p>
+									<a href="https://docs.google.com/a/unlv.nevada.edu/forms/d/1d0vifkLVEyGYDrC4OoDnIhDVvCQwciigBWi2CC0V1h0/viewform?c=0&w=1">Sign Up Link</a>
+								</p>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">More Information <i class="mdi-navigation-close right"></i></span>
+								<p>
+									Learn exciting skills in this workshop with a guest lecture and plenty of hands on experience as you learn to solder!
+									Remember to sign up and bring the fees due at entry!
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col s12 m6 l6">
+						<div class="card">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="img/digitalwave.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Digital Design Workshop <i class="mdi-navigation-more-vert right"></i></span>
+
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">Future Event <i class="mdi-navigation-close right"></i></span>
+								<p>
+									Stay tuned for more information.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Parallax-->
+		<div class="parallax-container">
+			<div class="parallax"><img src="img/unlv ieee logo.png">
+			</div>
+		</div>
+
+		<!--Team-->
+		<div class="section scrollspy" id="team">
+			<div class="container">
+				<h2 class="header text_b"> Our Officers </h2>
+				<div class="row">
+					<div class="col s12 m3">
+						<div class="card card-avatar">
+							<div class="waves-effect waves-block waves-light">
+								<img class="activator" src="img/jonnyd.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Jonathan Deboy
+									<br/>
+									<small><em><a class="red-text text-darken-1" href="#">President</a></em></small></span>
+								<p>
+									<a class="blue-text text-lighten-2" href="http://cmosedu.com/jbaker/courses/ee420L/s15/students/deboyj/"> <i class="fa fa-user "></i> </a>
+									<a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/jonathandeboy"> <i class="fa fa-linkedin-square"></i> </a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="card card-avatar">
+							<div class="waves-effect waves-block waves-light">
+								<img class="activator" src="img/jb.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Dr. Jacob Baker
+									<br/>
+									<small><em><a class="red-text text-darken-1" href="#">Faculty Advisor</a></em></small> </span>
+								<p>
+									<a class="blue-text text-lighten-2" href="http://cmosedu.com/jbaker/jbaker.htm"> <i class="fa fa-user"></i> </a>
+									<a class="blue-text text-lighten-2" href="https://www.linkedin.com/pub/r-jacob-jake-baker/5/5ba/853"> <i class="fa fa-linkedin-square"></i> </a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="card card-avatar">
+							<div class="waves-effect waves-block waves-light">
+								<img class="activator" src="img/jle.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4"> Justin Le
+									<br/>
+									<small><em><a class="red-text text-darken-1" href="#">Vice President</a></em></small></span>
+								<p>
+									<a class="blue-text text-lighten-2" href="http://www.tbpunlv.org/"> <i class="fa fa-chevron-circle-up"></i> </a>
+									<a class="blue-text text-lighten-2" href="http://cmosedu.com/jbaker/courses/ee420L/s15/students/lej6/"> <i class="fa fa-user"></i></a>
+									<a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/lejustinh"> <i class="fa fa-linkedin-square"></i> </a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m3">
+						<div class="card card-avatar">
+							<div class="waves-effect waves-block waves-light">
+								<img class="activator" src="img/andre.png">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">Jonathan Young
+									<br/>
+									<small><em><a class="red-text text-darken-1" href="#">Information Systems Officer</a></em></small></span>
+								<!-- <p>
+								<a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira"> <i class="fa fa-facebook-square"></i> </a>
+								<a class="blue-text text-lighten-2" href="https://twitter.com/im_joash"> <i class="fa fa-twitter-square"></i> </a>
+								<a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira"> <i class="fa fa-google-plus-square"></i> </a>
+								<a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp"> <i class="fa fa-linkedin-square"></i> </a>
+								</p> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Website Status-->
+		<div class="section scrollspy" id="status">
+			<div class="container">
+				<div class="row">
+					<div  class="col s12">
+						<h2 class = "header text_b"> Website Status</h2>
+						<h2 class = "center header text_h2"> This site is a major WIP and will be undergoing several revisions over the following weeks so please bear with us during this development period. </h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Footer-->
+		<footer id="contact" class="page-footer default_color scrollspy">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 l3 m4">
+
+						<h5 class=" white-text">IEEE Links</h5>
 						<ul>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
+							<li>
+								<a class="white-text" href="http://www.ieee.org/">IEEE.org</a>
 							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
+							<li>
+								<a class="white-text"  href="http://ieeexplore.ieee.org/">IEEE <em>Xplore</em> Digital Library</a>
 							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
+							<li>
+								<a class="white-text"  href="http://standards.ieee.org/">IEEE Standards</a>
+							</li>
+							<li>
+								<a class="white-text"  href="http://spectrum.ieee.org/">IEEE Spectrum</a>
+							</li>
+							<li>
+								<a class="white-text"  href="http://www.ieee.org/membership_services/membership/students/index.html">IEEE Students</a>
+							</li>
+							<li>
+								<a class="white-text"  href="http://www.ieee.org/membership_services/membership/my_ieee.html">myIEEE</a>
+							</li>
+							<li>
+								<a class="white-text"  href="https://www.ieee.org/societies_communities/SocietiesandCommunitiesLandingPage_20101209134921">IEEE Societies and Communities</a>
+							</li>
+							<li class="last">
+								<a  class="white-text"  href="http://www.ieee.org/sitemap">More Sites</a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="col l3 m4 s12">
+						<h5 class="white-text">UNLV IEEE Student Branch</h5>
+						<ul>
+							<li>
+								<a class="white-text"  href="http://ece.unlv.edu/">UNLV ECE Home</a>
+							</li>
+							<li>
+								<a  class="white-text" href="https://faculty.unlv.edu/eelabs/">UNLV ECE Labs</a>
+							</li>
+							<li>
+								<a class="white-text"  href = "http://catalog.unlv.edu/">UNLV Catalog </a>
+							</li>
+							<li class="last">
+								<a class="white-text"  href="http://www.unlv.edu">UNLV University Home</a>
 							</li>
 						</ul>
 					</div>
-					
-					<div>
+					<div class="col l3 m4 s12">
+						<h5 class="white-text">Social</h5>
 						<ul>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
+
+							<li>
+								<a class="white-text" href="https://www.facebook.com/UNLVIEEEStudentBranch/"> <i class="small fa fa-facebook-square white-text"></i> Facebook </a>
 							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
+							<li>
+								<a class="white-text" href="https://github.com/RonobirDas/mygithubpage"> <i class="small fa fa-github-square white-text"></i> Github </a>
 							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
-							</li>
+
 						</ul>
+						<form class="col" action="mailto:unlv.ieee@gmail.com" method="post">
+
+							<button class="btn waves-effect waves-light blue darken-1" type="submit">
+								Contact <i class="mdi-content-send right white-text"></i>
+							</button>
+
+						</form>
 					</div>
-					
-				</div>
-				<p><a href="#" class="arrow">More Branch Events</a></p>
-			</div>
-		</div>
-
-		<div id="hp-container4">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content4" class="container">
-				<h2 class="left">Section Events</h2>
-				<div class="right">
-					<img id="prev2" src="images/icon_up.gif" width="14" height="14" alt="Up" title="Up" />
-					<img id="next2" src="images/icon_down.gif" width="14" height="14" alt="Down" title="Down" /></a>
-				</div>
-				<div class="clear"></div>
-				<div id="slideshow2">
-				
-					<div>
-						<ul>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
-							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
-							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
-							</li>
-						</ul>
-					</div>
-					
-					<div>
-						<ul>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
-							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
-							</li>
-							<li>				
-								<img src="images/hp/img_fpo_90.jpg" width="90" height="50" alt="FPO" title="FPO" class="image" />
-								<div class="date">xx.xx.xx</div>
-								<p><strong>VOID.</strong></p>
-							</li>
-						</ul>
-					</div>
-					
-				</div>
-				<p><a href="#" class="arrow">More Section Events</a></p>
-			</div>
-		</div>
-
-		<div id="hp-container5">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content5" class="container">
-				<h2>Become an IEEE Member</h2>
-				<p>Void</p>
-				<p><a href="#" class="arrow">Join Now</a></p>
-			</div>
-		</div>
-
-		<div id="hp-container6">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content6" class="container">
-				<h2>myIEEE Login</h2>
-				<form>
-				<div class="small">Username</div>
-				<input name="username" id="username" type="text" class="round" />
-				<div class="small">Password</div>
-				<input name="password" id="password" type="password" class="round" />
-				
-				<input name="submit" id="submit" type="submit" value="Login Now" class="button" style="margin-top: 2px;" />
-				</form>
-			</div>
-		</div>
-
-		<div id="hp-container7">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content7" class="container">
-				<h2 class="left">Branch News</h2>
-				<div class="right">
-					<img id="prev3" src="images/icon_left.gif" width="14" height="14" alt="Up" title="Up" />
-					<img id="next3" src="images/icon_right.gif" width="14" height="14" alt="Down" title="Down" /></a>
-				</div>
-				<div class="clear"></div>
-				<div id="slideshow3">
-				
-					<div>
-						<ul>
-							<li>				
-								<h3>Lorem ipsum dolor sit consectetur</h3>
-								<div class="date">11.13.10</div>
-								<p>VOID</p>
-								<p><a href="#" class="button">See Details</a></p>
-							</li>
-							<li>				
-								<h3>Lorem ipsum dolor sit consectetur</h3>
-								<div class="date">11.13.10</div>
-								<p>VOID</p>
-								<p><a href="#" class="button">See Details</a></p>
-							</li>
-							<li>				
-								<h3>Lorem ipsum dolor sit consectetur</h3>
-								<div class="date">11.13.10</div>
-								<p>VOID</p>
-								<p><a href="#" class="button">See Details</a></p>
-							</li>
-						</ul>
-					</div>
-					
-					<div>
-						<ul>
-							<li>				
-								<h3>Lorem ipsum dolor sit consectetur</h3>
-								<div class="date">11.13.10</div>
-								<p>VOID</p>
-								<p><a href="#" class="button">See Details</a></p>
-							</li>
-							<li>				
-								<h3>Lorem ipsum dolor sit consectetur</h3>
-								<div class="date">11.13.10</div>
-								<p>VOID</p>
-								<p><a href="#" class="button">See Details</a></p>
-							</li>
-							<li>				
-								<h3>Lorem ipsum dolor sit consectetur</h3>
-								<div class="date">11.13.10</div>
-								<p>VOID</p>
-								<p><a href="#" class="button">See Details</a></p>
-							</li>
-						</ul>
-					</div>				
-					
 				</div>
 			</div>
-		</div>
+			<div class="footer-copyright default_color">
+				<div class="container">
+					<p>
+						University of Nevada, Las Vegas
+						<br />
+						<a  class="white-text" href="http://www.ieee.org/privacy" target="_blank">Privacy &amp; Opting Out of Cookies</a>
+						| <a class="white-text"  href="http://www.ieee.org/site_terms_conditions.html" target="_blank">Terms &amp; Conditions</a>
+						| <a  class="white-text" href="http://www.ieee.org/nondiscrimination" target="_blank">Nondiscrimination Policy</a>
+						|Made by Ronobir Das. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>, <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>
 
-		<div id="hp-container9">
-			<div class="overline"><img src="images/transparent.gif" width="1" height="1" alt="" /></div>
-			<div id="hp_content9" class="container">
-				<h2>Internship &amp; Scholarship Opportunity Boards</h2>
-				<ul>
-					<li>				
-						<div class="date">xx.xx.xx</div>
-						<p>justo enim venenatis tellus.<br />
-						<strong>VOID</strong><br />
-						<a href="#" class="read-more">Learn more</a></p>
-					</li>
-					<li>				
-						<div class="date">xx.xx.xx</div>
-						<p>justo enim venenatis tellus.<br />
-						<strong>VOID</strong><br />
-						<a href="#" class="read-more">Learn more</a></p>
-					</li>
-					<li>				
-						<div class="date">xx.xx.xx</div>
-						<p>justo enim venenatis tellus.<br />
-						<strong>VOID</strong><br />
-						<a href="#" class="read-more">Learn more</a></p>
-					</li>
-				</ul>
-				<p><a href="#" class="arrow">View all job postings</a></p>
+					</p>
+				</div>
 			</div>
-		</div>
+		</footer>
 
-	</div>
+		<!--  Scripts-->
+		<script src="min/plugin-min.js"></script>
+		<script src="min/custom-min.js"></script>
 
-	<div class="clear"></div>
-
-
-</div>
-
-<div id="container-bottom" class="clear"></div>
-
-<!-- Footer -->
-<div id="footer">
-	<p>Your School Name<br />
-	<a href="#">Home</a>
-	| <a href="#">Site Map</a>
-	| <a href="#">Contact</a> 
-	| <a href="#">Help</a>
-	| <a href="http://www.ieee.org/privacy" target="_blank">Privacy &amp; Opting Out of Cookies</a> 
-	| <a href="http://www.ieee.org/site_terms_conditions.html" target="_blank">Terms &amp; Conditions</a>
-	| <a href="http://www.ieee.org/nondiscrimination" target="_blank">Nondiscrimination Policy</a> 		
-	&copy; Copyright 2011 IEEE - All Rights Reserved.</p>
-</div>
-
-</body>
+	</body>
 </html>

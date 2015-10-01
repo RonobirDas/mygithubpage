@@ -159,6 +159,12 @@ nav a.button-collapse {
 	text-align: center;
 	margin-top: 20px
 }
+ #nor /*Look up CSS ID and classes http://www.w3schools.com/cssref/css_selectors.asp*/
+ {
+	height: 150px;
+	width: 112px;
+    border-radius: 75px
+}
 .card-avatar
 img {
 	height: 150px;

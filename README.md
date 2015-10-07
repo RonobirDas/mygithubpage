@@ -1,2 +1,2 @@
 # mygithubpage
-Welcome to the design of IEEE website
+Welcome to the design of the UNLV IEEE website

@@ -10,29 +10,34 @@
     padding: 15px;
 }*/
 
-#intro,
+
 #work,
 #team,
 #status {
     padding-top: 5rem;
 }
 
-video#bgvid {
-    position: absolute;
+/*video#bgvid {
+    position: relative;
+/*
     top: 50%;
     left: 50%;
-    width: auto;
+*/
+ /*   width: auto;
     height: auto;
-    z-index: -100;
+/*    z-index: -100;*/
+/*
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(file:///C:/Users/Ronobir/Desktop/Web/mygithubpage/min/image/firstframe.PNG) no-repeat;
-}
+*/
+   /* background: url(file:///C:/Users/Ronobir/Desktop/Web/mygithubpage/min/image/firstframe.PNG) no-repeat;
+}*/
 
-#index-banner {
+/*#index-banner {
     position: relative;
-    height: 1000px;
-}
+    height: auto;
+    width: auto;
+}*/
 
 #nav_f {
     box-shadow: none !important;
@@ -83,7 +88,7 @@ video#bgvid {
 
 .promo i {
     color: rgb(33, 150, 243);
-    font-size: 7rem;
+    font-size: 5rem;
     display: block;
     font-family: 'Roboto', sans-serif;
 }
@@ -107,7 +112,7 @@ video#bgvid {
 }
 
 nav ul a {
-    font-size: 2em;
+    font-size: 1em;
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
     display: block;

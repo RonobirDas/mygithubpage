@@ -54,9 +54,9 @@
 }
 
 .brand-logo {
-    position: static;
+    position: fixed;
     color: rgb(255, 255, 255);
-    display: inline-block;
+    display: flex;
     font-style: normal;
     font-weight: 400;
     padding: 0px;
@@ -115,7 +115,7 @@
 nav ul a {
     color: rgb(255, 255, 255);
     letter-spacing: 2px;
-    display: block;
+    display: inline;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }

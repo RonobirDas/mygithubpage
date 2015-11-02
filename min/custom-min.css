@@ -9,7 +9,10 @@
 /*.icon-block {
     padding: 15px;
 }*/
-
+#feed{
+width: auto;
+    height: auto;
+}
 
 #work,
 #team,

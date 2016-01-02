@@ -39,6 +39,13 @@
     $('.modal-trigger').leanModal();
   });
     </script>
+    <script>
+     $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+    </script>
        
 </head>
 
@@ -151,8 +158,11 @@
             <p>
                 We have multiple activities throughout the year such as technical workshops, resume workshops, technical seminars, guest speakers, and conferences. The IEEE has many competitions (regional, national, international) that student members can compete in, but the main competitions our branch has focused on are the IEEEXtreme 24-hour programming competition held every fall, and the Student Paper Competition and Micromouse competition held every spring.
             </p>
-            <iframe src="https://www.google.com/calendar/embed?height=720&amp;wkst=2&amp;bgcolor=%2333ccff&amp;src=unlv.nevada.edu_7tpjt41t99d4lq4ltat0d06jsc%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="1280" height="720" frameborder="0" scrolling="no"></iframe>
-
+              <ul class="collapsible popout" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header"><i class="fa fa-calendar"></i>Calendar</div>
+                <div class="collapsible-body"> <iframe src="https://www.google.com/calendar/embed?height=720&amp;wkst=2&amp;bgcolor=%2333ccff&amp;src=unlv.nevada.edu_7tpjt41t99d4lq4ltat0d06jsc%40group.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="1280" height="720" frameborder="0" scrolling="no"></iframe></div></li>
+            </ul>
 
             <div class="row">
                 <div class="divider"></div>

@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Starter Template - Materialize</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="theme-color" content="#2196F3">
+    <title>UNLV IEEE EE News Feed</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="min/custom-min.css" type="text/css" rel="stylesheet">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-68563559-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+    </script>
+    <script>
+     $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+    </script>
 </head>
-<body>
+<body id="top" class="scrollspy">
+     <!--Navigation-->
+    <div class="navbar-wrapper">
+        <nav id="nav_f" class="default_color" role="navigation">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="http://unlvieee.me" id="logo-container" class="brand-logo"><img src="img/unlvieeeicon.png" height="35" width="40"> UNLV IEEE  </a>
+                     
+                </div>
+            </div>
+        </nav>
+    </div>
         <div class="section scrollspy" id="feed">
             <div class="container">
                         <h2 class="header center text_b"> EE News Feed</h2>
@@ -29,24 +79,27 @@
                          <div class="divider"></div>
                          
                          <div class="row">
-                    <div class="col s12 m3 l3">
-                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=texasinstruments" width="200" height="200"></iframe>
+                    <div class="col s12 m6 l6">
+                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=texasinstruments" width="600" height="500"></iframe>
+                        <br>
                             Texas Instruments Youtube Channel
                              </div>
-                             <div class="col s12 m3 l3">
-                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=EEVblog" width="200" height="200"></iframe>
-                             EEV Blog Youtube Channel
+                             <div class="col s12 m6 l6">
+                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=EEVblog" width="600" height="500"></iframe>
+                            <br> EEV Blog Youtube Channel
                              </div>
-                             <div class="col s12 m3 l3">
-                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=Afrotechmods" width="200" height="200">
+                </div>
+                <div class="row">
+                             <div class="col s12 m6 l6">
+                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=Afrotechmods" width="600" height="500">
                                 
-                            </iframe>
+                            </iframe><br>
                             Afrotechmod Youtube Channel
                              </div>
-                              <div class="col s12 m3 l3">
-                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=TheSignalPathBlog" width="200" height="200">
+                              <div class="col s12 m6 l6">
+                            <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=TheSignalPathBlog" width="600" height="500">
                                 
-                            </iframe>
+                            </iframe><br>
                             The Signal Path Blog Youtube Channel
                              </div>
                 </div>
@@ -60,6 +113,171 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../../bin/materialize.js"></script>
   <script src="js/init.js"></script>
+    
+     <!--Footer-->
+        <footer id="contact" class="page-footer default_color scrollspy">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l3 m4">
+
+                        <h5 class=" white-text">IEEE Links</h5>
+                        <ul>
+                            <li>
+                                <a class="white-text" href="http://www.ieee.org/">IEEE.org</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="http://ieeexplore.ieee.org/">IEEE <em>Xplore</em> Digital Library</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="http://standards.ieee.org/">IEEE Standards</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="http://spectrum.ieee.org/">IEEE Spectrum</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="http://www.ieee.org/membership_services/membership/students/index.html">IEEE Students</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="http://www.ieee.org/membership_services/membership/my_ieee.html">myIEEE</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="https://www.ieee.org/societies_communities/SocietiesandCommunitiesLandingPage_20101209134921">IEEE Societies and Communities</a>
+                            </li>
+                            <li class="last">
+                                <a class="white-text" href="http://www.ieee.org/sitemap">More Sites</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col l3 m4 s12">
+                        <h5 class="white-text">UNLV IEEE Student Branch</h5>
+                        <ul>
+                            <li>
+                                <a class="white-text" href="http://ece.unlv.edu/">UNLV ECE Home</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="https://faculty.unlv.edu/eelabs/">UNLV ECE Labs</a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="http://catalog.unlv.edu/">UNLV Catalog </a>
+                            </li>
+                            <li class="last">
+                                <a class="white-text" href="http://www.unlv.edu">UNLV University Home</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l3 m4 s12">
+                        <h5 class="white-text">Social</h5>
+                        <ul>
+
+                            <li>
+                                <a class="white-text" href="https://www.facebook.com/UNLVIEEEStudentBranch/"> <i class="small fa fa-facebook-square white-text"></i> Facebook </a>
+                            </li>
+                            <li>
+                                <a class="white-text" href="https://github.com/RonobirDas/mygithubpage"> <i class="small fa fa-github-square white-text"></i> Github </a>
+                            </li>
+                            <li>
+                                <div id="placeholder-div2"></div>
+<script>
+  gapi.hangout.render('placeholder-div2', {
+    'render': 'createhangout',
+    'initial_apps': [{'app_id' : '184219133185', 'start_data' : 'dQw4w9WgXcQ', 'app_type' : 'ROOM_APP' }],
+    'widget_size': 72
+  });
+</script>
+                            </li>
+                            <li>
+                            <a class="white-text" ><i class="small fa fa-envelope white-text"></i>  Email: unlv.ieee@gmail.com </a>
+                            </li>
+
+                        </ul>
+                        <form class="col" action="mailto:unlv.ieee@gmail.com" method="post">
+
+                            <button class="btn waves-effect waves-light blue darken-1" type="submit">
+                                Contact <i class="mdi-content-send right white-text"></i>
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                
+  <!-- Modal Trigger -->
+  <a class="modal-trigger waves-effect waves-light blue darken-1 btn" href="#modal1">Legal Disclaimer</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Disclaimer</h4>
+      <p>By Using this site you agree to the following:
+          <a class="blue-text" href="http://ourdisclaimer.com/?i=UNLVIEEE">Disclaimer</a>
+        </p>
+        <p>
+Additionally from Ronobir Das: 
+Any views or opinions presented in this website are solely those of the author and do not necessarily represent those of the University of Nevada, Las Vegas and its employees or the various instituions listed here or the Institute of Electrical and Electronic Engineers (IEEE). They authors of the content do not endorse this site or have anything to do with this site. This is a noncommerical site.  I gain nothing from your use of this site.  I hold no responsibility or guarantee anything on this site or this site itself helping you in your courses or in life. I’m not in any way profiting off of this. This site and its author are in no way affiliated with IEEE or UNLV, outside of being a UNLV student. Please use at your own risk. 
+</p>
+      </div>
+       <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+                
+                <!-- Modal Trigger -->
+  <a class="waves-effect waves-light blue darken-1 btn modal-trigger" href="#modal2">Video Credits</a>
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Banner Video Credits</h4>
+      <p>The above banner video was not content from Ronobir Das, UNLV, IEEE, UNLVIEEE or any of its members and officers. The video was modified by being stiched together and shortened to fit a small time for a loop. Licensors do not endorse products or services shown here. The banner video was composed using CC Licensed Videos listed previously found on http://www.videvo.net/.
+        <ul >
+        <li>
+            <a class="blue-text" href="http://www.videvo.net/video/hdr-satellite-dish/450">HDR Satellite Dish</a> <a class="blue-text" href="http://beachfrontprod.blogspot.co.uk/"> by Beachfront </a>  is licensed under <a class="blue-text" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>
+        </li>
+        <li>
+            <a class="blue-text" href="http://www.videvo.net/video/circuit-board-track-across/1599">Circuit Board Track Across</a> <a class="blue-text" href="http://www.videvo.net/"> by Videvo </a>  is licensed under <a class="blue-text" href="http://www.videvo.net/terms-conditions/">VIDEVO STANDARD LICENSE</a>            
+        </li>
+        <li>
+            <a class="blue-text" href="http://www.videvo.net/video/light-bulb-turning-on/4429">Light Bulb Turning On</a> by tofenrol50 is licensed under <a class="blue-text" href="http://www.videvo.net/terms-conditions/">VIDEVO STANDARD LICENSE</a>            
+        </li>
+        <li>
+           <a class="blue-text" href="http://www.videvo.net/video/circuit-board/4252">Circuit Board</a> <a class="blue-text" href="http://www.beachfrontbroll.com/"> by Beachfront </a>  is licensed under <a class="blue-text" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>             
+        </li>
+        <li>
+           <a class="blue-text" href="http://www.videvo.net/video/camera-lens-servo/451">Camera Lens Servo</a> <a class="blue-text" href="http://beachfrontprod.blogspot.co.uk/"> by Beachfront </a>  is licensed under <a class="blue-text" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>             
+        </li>
+        <li>
+           <a class="blue-text" href="http://www.videvo.net/video/ethernet-cables/440">Ethernet Cables</a> <a class="blue-text" href="http://beachfrontprod.blogspot.co.uk/"> by Beachfront </a>  is licensed under <a class="blue-text" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>             
+        </li>
+        <li>
+            <a class="blue-text" href="http://www.videvo.net/video/rotating-camera-lens-1/1789">Rotating Camera Lens 1</a> <a class="blue-text" href="http://www.videvo.net/"> by Videvo </a>  is licensed under <a class="blue-text" href="http://www.videvo.net/terms-conditions/">VIDEVO STANDARD LICENSE</a>            
+        </li>
+        <li>
+            <a class="blue-text" href="http://www.videvo.net/video/ram-circuit-board/1598">RAM Circuit Board</a> <a class="blue-text" href="http://www.videvo.net/"> by Videvo </a>  is licensed under <a class="blue-text" href="http://www.videvo.net/terms-conditions/">VIDEVO STANDARD LICENSE</a>            
+        </li>
+        <li>
+             <a class="blue-text" href="http://www.videvo.net/video/space-rocket-launch-19-/120">Space Rocket Launch 19</a> <a class="blue-text" href="https://www.nasa.gov/"> by NASA </a>  is licensed under <a class="blue-text" href="https://creativecommons.org/licenses/by/3.0/">CC BY STANDARD NASA LICENSE</a>           
+        </li>
+        </ul></p>
+       <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+    </div>
+  </div>
+            
+            </div>
+            <div class="footer-copyright default_color">
+                <div class="container">
+                    <p>
+                        University of Nevada, Las Vegas
+                        <br>
+                        <a class="white-text" href="http://www.ieee.org/nondiscrimination" target="_blank">Nondiscrimination Policy</a> | Website made by Ronobir Das. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>, <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>, &amp; <a class="white-text" href="http://www.getmdl.io/">Google's Material Design Lite</a> &copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, UNLV-IEEE and Ronobir Das.
+ </br>
+                    </p>
+                </div>
+            </div>
+        </footer>
 
   </body>
 </html>

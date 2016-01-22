@@ -46,6 +46,10 @@
     });
   });
     </script>
+       <script> $(document).ready(function(){
+      $('.slider').slider({full_width: true, height: 1200});
+    }); </script>
+       
        
 </head>
 
@@ -120,14 +124,35 @@
    <!-- <video class="responsive-video" autoplay loop preload="auto" poster="img/firstframe.PNG" id="bgvid1">
         <source src="https://googledrive.com/host/0B2HR-xnIXVQkOGdYX3lTdlZFYXc/mediumres.mp4" type="video/mp4">
     </video> -->
-    <img class="responsive-img" src="https://googledrive.com/host/0B2HR-xnIXVQkWElfSlJxV29iR0E/macbookcamera.jpg">
+     <div class="slider">
+    <ul class="slides">
+      <li>
+        <img class="responsive-img" src="https://googledrive.com/host/0B2HR-xnIXVQkWElfSlJxV29iR0E/cameralense.jpg">
+      </li>
+      <li>
+        <img class="responsive-img" src="https://googledrive.com/host/0B2HR-xnIXVQkWElfSlJxV29iR0E/board2.jpg">
+      </li>
+      <li>
+        <img class="responsive-img" src="https://googledrive.com/host/0B2HR-xnIXVQkWElfSlJxV29iR0E/circuitboard.jpg">
+      </li>
+      <li>
+        <img class="responsive-img" src="https://googledrive.com/host/0B2HR-xnIXVQkWElfSlJxV29iR0E/headphones.jpg">
+      </li>
+        <li>
+        <img class="responsive-img" src="https://googledrive.com/host/0B2HR-xnIXVQkWElfSlJxV29iR0E/codeyco.jpg">
+      </li>
+        <li>
+        <img class="responsive-img" src="https://googledrive.com/host/0B2HR-xnIXVQkWElfSlJxV29iR0E/lightbulb.jpg">
+      </li>
+    </ul>
+  </div>
 
     <!--Intro and service-->
     <div id="intro" class="section scrollspy">
         <div class="container">
             <div class="row">
                 <div class="col s12">
-                    <h2 class="center header text_h2"> We are the UNLV student branch of the <b>I</b>nstitute of <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineeers. </h2>
+                    <h2 class="center header text_h2"> We are the <b>U</b>niversity of <b>N</b>evada, <b>L</b>as <b>V</b>egas student branch of the <b>I</b>nstitute of <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineers. </h2>
                 </div>
 
                 <div class="col s12 m4 l4">
@@ -570,7 +595,7 @@ The conference will partially overlap with the Storage Visions Conference, that 
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Jonathan DeBoy
 									<br>
-									<small><em><a class="blue-text text-darken-1" href="subpage/templates/text-only/index.html">President</a></em></small></span>
+									<small><em><a class="blue-text text-darken-1" href="subpage/templates/text-only/index.html">UNLV Student Branch Chair</a></em></small></span>
                             <p>
                                 <a class="blue-text text-lighten-2" href="subpage/templates/text-only/index.html"> <i class="fa fa-user "></i> </a>
                                 <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/jonathandeboy"> <i class="fa fa-linkedin-square"></i> </a>
@@ -603,7 +628,7 @@ The conference will partially overlap with the Storage Visions Conference, that 
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4"> Justin Le
 									<br>
-									<small><em><a class="blue-text text-darken-1" href="#">Vice President</a></em></small></span>
+									<small><em><a class="blue-text text-darken-1" href="#">Vice Chair</a></em></small></span>
                             <p>
                                 <a class="blue-text text-lighten-2" href="http://www.tbpunlv.org/"> <i class="fa fa-chevron-circle-up"></i> </a>
                                 <a class="blue-text text-lighten-2" href="http://cmosedu.com/jbaker/courses/ee420L/s15/students/lej6/"> <i class="fa fa-user"></i>
@@ -719,12 +744,31 @@ The conference will partially overlap with the Storage Visions Conference, that 
                 <div class="row">
                     <div class="col s12">
                         <h2 class="header text_b"> Location</h2>
-                        <h2 class="center header text_h2"> Our Meetings take place at TBE-B 350 </h2>
+                        <h2 class="center header text_h2"> Our Meetings take place at TBE-A Great Hall </h2>
                     </div>
                 </div>
                 <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/streetview?location=36.1098%2C-115.1411&key=AIzaSyBzS1eiloZHGTaHha-W0YVtnuC1iL7tQUo" allowfullscreen></iframe>
             </div>
         </div>
+<!--Discussion Forum-->
+<div class="section scrollspy" id="forum">
+    <div class="container">
+        <iframe id="forum_embed"
+ src="javascript:void(0)"
+ scrolling="no"
+ frameborder="0"
+ width="900"
+ height="700">
+</iframe>
+
+<script type="text/javascript">
+ document.getElementById("forum_embed").src =
+  "https://groups.google.com/forum/embed/?place=forum/unlv-ieee" +
+  "&showsearch=true&showpopout=true&parenturl=" +
+  encodeURIComponent(window.location.href);
+</script>
+    </div>
+</div>
         <!--Footer-->
         <footer id="contact" class="page-footer default_color scrollspy">
             <div class="container">

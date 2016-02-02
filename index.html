@@ -36,7 +36,7 @@
 <script>
   $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-    $('.modal-trigger').leanModal();
+    $('.modal-trigger').leanModal(); $(".dropdown-button").dropdown();
   });
     </script>
     <script>
@@ -56,14 +56,14 @@
 <body id="top" class="scrollspy">
 
     <!--Navigation-->
-    <div class="navbar-wrapper">
-        <nav id="nav_f" class="default_color" role="navigation">
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a id="logo-container" class="brand-logo" style="left: -190px; top: -2px;"><img src="img/unlvieeeicon.png" height="35" width="40"> UNLV IEEE  </a>
-                     
-                    <ul class="right hide-on-med-and-down">
+    <ul id="dropdown1" class="dropdown-content">
                         <li>
+                            <a href="#contact">Contact and Links</a>
+                        </li>
+                                                <li>
+                            <a href="feed.html">EE News Feed</a>
+                        </li>
+        <li>
                             <a href="#intro">About</a>
                         </li>
                         <li>
@@ -75,12 +75,18 @@
                         <li>
                             <a href="#team">Officers</a>
                         </li>
-                        <li>
-                            <a href="#contact">Contact and Links</a>
-                        </li>
-                                                <li>
-                            <a href="feed.html">EE News Feed</a>
-                        </li>
+</ul>
+    <nav id="nav_f" class="default_color" role="navigation">
+    <div class="navbar-wrapper">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a id="logo-container" class="brand-logo" style="left: -190px; top: -2px;"><img src="img/unlvieeeicon.png" height="35" width="40"> UNLV IEEE  </a>
+                     
+                    <ul class="right hide-on-med-and-down">
+                        
+                              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Home Page Resources<i class="material-icons right">arrow_drop_down_circle</i></a></li>
+
+
                         <li>
                             <a href="https://involvementcenter.unlv.edu/organization/IEEE/about">UNLV Involvement Center</a>
                         </li>
@@ -119,8 +125,9 @@
                     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i><img src="img/unlvieeeicon.png" height="35" width="40"> UNLV IEEE</a>
                 </div>
             </div>
-        </nav>
+        
     </div>
+        </nav>
    <!-- <video class="responsive-video" autoplay loop preload="auto" poster="img/firstframe.PNG" id="bgvid1">
         <source src="https://googledrive.com/host/0B2HR-xnIXVQkOGdYX3lTdlZFYXc/mediumres.mp4" type="video/mp4">
     </video> -->
